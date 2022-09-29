@@ -1,8 +1,5 @@
-
-% JuliaCon proceedings template
 \documentclass{juliacon}
 \usepackage{amsmath}
-
 \setcounter{page}{1}
 
 \begin{document}
@@ -16,8 +13,8 @@
 
 \maketitle
 
+
 \section*{ABSTRACT}
-\label{sec:abstract}
 We present a Julia package, \textit{DisjunctiveProgramming.jl}, that extends the functionality in \textit{JuMP.jl} (Dunning, et al., 2017) to allow modeling problems via logical propositions and disjunctive constraints. Logical propositions are converted into algebraic expressions by converting the Boolean expressions to Conjunctive Normal Form and then to algebraic inequalities. The package allows the user to specify the technique to reformulate the disjunctions (Big-M or Hull reformulations) into mixed-integer constraints. This allows generating models that can be solved by the various MIP solvers supported by JuMP (JuMP Supported Solvers, 2022). The package supports reformulations for disjunctions containing linear, quadratic, and nonlinear constraints.
 
 \section*{Keywords}
@@ -119,7 +116,6 @@ Reformulation using the Convex Hull method:
 aaa
 
 \section{DisjunctiveProgramming.jl}
-\label{sec:documentclass}
 Info
 
 \section{Future Work}
@@ -129,11 +125,9 @@ TODO
 aaa
 
 \section{Conclusion}
-\label{sec:documentclass}
 
 
 \section{References}
-\label{sec:documentclass}
 %
 The juliacon class file preserves the standard LATEX{} interface such
 that any document that can be produced using the standard LATEX{}
@@ -145,28 +139,7 @@ details can be dealt with at a later stage.\vskip 6pt
 Use should be made of symbolic references (\verb|\ref| ) in order to
 protect against late changes of order, etc.
 
-\section{USING THE JuliaCon Article CLASS FILE}
 
-If the file \verb|juliacon.cls|  is not already in the appropriate system directory
-for \LaTeX{} files, either arrange for it to be put there or copy
-it to your working directory. The \verb|juliacon|  document class is implemented
-as a complete class, not a document style option. In order to
-use the \verb|juliacon  document class, replace \verb|article|  by \verb|juliacon|  in the
-\verb|\documentclass|  command at the beginning of your document:
-\vskip 6pt
-\begin{centering}
-    \verb|\documentclass{article}|  \end{centering}
-\vskip 6pt
-replace by
-\vskip 6pt
- \verb|\documentclass{juliacon}|  \vskip 6pt
-In general, the following standard document \verb|style|  options should
-{ \itshape not} be used with the {\footnotesize \itshape article} class file:
-\begin{enumerate}
-\item[(1)] \verb|10pt|,  \verb|11pt|,  \verb|12pt|   ? unavailable;
-\item[(2)] \verb|twoside|  (no associated style file) ? \verb|twoside|  is the default;
-\item[(3)] \verb|fleqn|, \verb|leqno|, \verb|titlepage| ? should not be used;
-\end{enumerate}
 
 \section{Additional Document Style Options}
 \label{sec:additional_doc}
